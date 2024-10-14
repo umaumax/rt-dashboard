@@ -62,6 +62,10 @@ from(bucket: "bucket")
 
 ダッシュボード上でリアルタイムにデータが反映されるようにするには上部のパネルから自動更新を`Auto`にすると5秒間隔でデータが更新されるようになった
 
+# NOTE
+* DBからのデータ取得やそのデータソースの可視化のスパンを考えると1秒単位のリアルタイムは難しく、10秒単位のリアルタイムが限界なのではないか?
+* ちょっとした可視化に対してはオーバースペックである
+
 # 参考
 * [InfluxDB+Grafana構築 on docker #Docker - Qiita]( https://qiita.com/7280ayubihs/items/ace07b14d934dca4744c )
 * [GrafanaとInfluxDBで作るProxmoxダッシュボード【Docker】 | Konsome Engineering]( https://engineering.konso.me/articles/make-proxmox-dashboard-using-grafana-and-influxdb/ )
